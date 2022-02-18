@@ -78,12 +78,13 @@ nav #logo{
     grid-column-end: 12;
     position: absolute;
     top: 60px;
-    left: -100vw;
+    left: -140vw;
     padding: 20px 20px;
     width: 100vw;
     text-align: center;
     background-color: hsla(0, 0%, 0%, 0.2);
     height: 100vh;
+    min-width: 350px;
 }
 .nav-menu.active{
     left: 0;
