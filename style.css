@@ -58,6 +58,16 @@ a{
     grid-column: span 2;
 }
 
+/* Section heading for screen readers */
+.section-heading{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
 /* Navigation bar */
 .nav-background{
     background: white;
@@ -70,7 +80,7 @@ nav{
     padding: 20px 20px 0;
     align-items:center;
 }
-nav #logo{
+nav .logo{
     padding: 0 0 15px;
 }
 .nav-menu{
@@ -285,7 +295,7 @@ footer{
     padding: 50px 20px 50px;
     text-align: center;
 }
-footer #logo{
+footer .logo{
     filter: brightness(0) invert(1);
     align-self: flex-start;
 }
@@ -422,7 +432,7 @@ footer .request-link{
     footer{
         text-align: start;
     }
-    footer #logo{
+    footer .logo{
         grid-column-start: 1;
         margin: 20px 0 0;
     }
