@@ -164,7 +164,7 @@ header{
     min-height: 560px;
     padding: 0 20px;
 }
-h1{
+.header-heading{
     font-size: 3rem;
     font-weight: 300;
     width: 100%;
@@ -290,12 +290,12 @@ h1{
 footer, footer a{
     color: var(--White);
 }
-footer{
+.footer{
     grid-template-rows: repeat(3, auto);
     padding: 50px 20px 50px;
     text-align: center;
 }
-footer .logo{
+.footer .logo{
     filter: brightness(0) invert(1);
     align-self: flex-start;
 }
@@ -312,7 +312,7 @@ footer .logo{
 .footer-nav-links a:hover{
     color: var(--Lime-Green);
 }
-footer .request-link{
+.footer .request-link{
     align-self: flex-start;
     grid-column-start: 1;
     grid-column-end: 13;
@@ -386,7 +386,7 @@ footer .request-link{
     }
 
     /* Header */    
-    h1{
+    .header-heading{
         font-size: 3.5rem;
         width: 45%;
         margin: 0;
@@ -429,10 +429,10 @@ footer .request-link{
         flex-direction: row;
     }
     
-    footer{
+    .footer{
         text-align: start;
     }
-    footer .logo{
+    .footer .logo{
         grid-column-start: 1;
         margin: 20px 0 0;
     }
@@ -443,7 +443,7 @@ footer .request-link{
         align-self: start;
         grid-template-columns: repeat(2, auto);
     }
-    footer .request-link{
+    .footer .request-link{
         grid-column-start: 10;
         grid-column-end: 13;
         align-self: flex-start;
