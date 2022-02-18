@@ -64,6 +64,7 @@ a{
     position:fixed;
     z-index: 2;
     width: 100vw;
+    min-width: 350px;
 }
 nav{
     padding: 20px 20px 0;
@@ -165,7 +166,7 @@ h1{
     width: 100%;
 }
 .header-img{
-    height: 700px;
+    height: 650px;
     width: 100%;
     min-width: 350px;
     max-width: 600px;
