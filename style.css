@@ -93,7 +93,7 @@ nav .logo{
     width: 100vw;
     text-align: center;
     background-color: hsla(0, 0%, 0%, 0.2);
-    height: 150vh;
+    height: 100vh;
 }
 .nav-menu.active{
     left: 0;
