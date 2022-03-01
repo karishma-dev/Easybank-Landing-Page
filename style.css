@@ -88,16 +88,16 @@ nav .logo{
     grid-column-end: 12;
     position: absolute;
     top: 60px;
-    left: -140vw;
-    padding: 20px 20px;
+    left: -2000px;
+    padding: 20px 20px 0;
     width: 100vw;
     text-align: center;
     background-color: hsla(0, 0%, 0%, 0.2);
-    height: 100vh;
-    min-width: 350px;
+    height: 150vh;
 }
 .nav-menu.active{
     left: 0;
+    min-width: 350px;
 }
 .nav-item{
     margin: 0 auto;
@@ -158,6 +158,7 @@ nav .request-link{
 }
 .bg-color{
     background-color: var(--Very-Light-Gray);
+    min-width: 350px;
 }
 header{
     height: 40vh;
@@ -184,8 +185,7 @@ header{
     position: absolute;
     z-index: 1;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
 }
 .section-head{
     font-weight: 400;
@@ -286,6 +286,7 @@ header{
 /* Footer */
 .footer-background{
     background-color: var(--Dark-Blue);
+    min-width: 350px;
 }
 footer, footer a{
     color: var(--White);
@@ -339,12 +340,19 @@ footer, footer a{
     order: 5;
     background-color: rgb(250, 243, 247);
     font-size: 0.9rem;
+    min-width: 350px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
 
 /* Media Queries */
+@media (min-width: 578px) {
+    .header-img{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
 @media (min-width: 1000px) {
     .grid-container{
         max-width: 1300px;
