@@ -113,7 +113,7 @@ nav .request-link{
 .request-link{
     width: fit-content;
     color: var(--White);
-    padding: 10px 20px;
+    padding: 0px;
     border-radius: 50px;
     background: rgb(49,211,92);
     background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
@@ -123,12 +123,13 @@ nav .request-link{
 }
 .hamburger{
     grid-column-start: 12;
-    height: 23px;
+    height: 18px;
     width: 35px;
     margin-bottom: 20px;
     background: url("images/icon-hamburger.svg");
     background-size: contain;
     cursor: pointer;
+    margin-right: 20px;
 }
 .hamburger.active{
     background: url("images/icon-close.svg");
@@ -354,7 +355,7 @@ footer, footer a{
         max-width: 1300px;
     }
     nav .request-link{
-        grid-column-start: 11;
+        grid-column-start: 10;
         grid-column-end: 13;
         display: block;
         margin: 0 0 15px;
@@ -362,7 +363,7 @@ footer, footer a{
     .nav-menu{
         display: flex;
         grid-column-start: 4;
-        grid-column-end: 10;
+        grid-column-end: 9;
         position: static;
         padding: 0px;
         width: fit-content;
@@ -468,4 +469,9 @@ footer, footer a{
         margin-top: -20px;
     }
     
+}
+@media (min-width: 1080px) {
+    nav .request-link{
+        grid-column-start: 11;
+    }
 }
