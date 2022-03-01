@@ -337,6 +337,12 @@ footer, footer a{
 }
 
 /* Media Queries */
+@media (max-width: 400px) {
+    .hamburger{
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+}
 @media (min-width: 578px) {
     .header-img{
         left: 50%;
